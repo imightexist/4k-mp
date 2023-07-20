@@ -55,8 +55,8 @@ public class M extends Canvas {
 		JButton hostButton = new JButton("Host");
 		hostButton.addActionListener(e -> {
 			try {
-				game.clientAcceptor = new ServerSocket(25575);
-				game.server = new Socket("127.0.0.1", 25575);
+				game.clientAcceptor = new ServerSocket(25565);
+				game.server = new Socket("127.0.0.1", 25565);
 				frame.setTitle("Minecraft 4K HOSTING");
 
 				selectFrame.setVisible(false);
